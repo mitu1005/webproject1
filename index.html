@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Find Matching Words!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Matching Words Game</h1>
+
+<div class="info">Level: <span id="level">1</span></div>
+<div class="info">Score: <span id="score">0</span></div>
+<div class="info">Wrong Left: <span id="wrong">10</span></div>
+<div class="info">Time Left: <span id="time">60</span> sec</div>
+
+<div class="game-box" id="game"></div>
+
+<div class="overlay" id="endOverlay">
+  <div class="overlay-box">
+    <h2 id="endTitle"> OPss, Game Over!</h2>
+    <p>Your Score: <span id="finalScore"></span></p>
+    <button onclick="restartGame()">Wanna try Again</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

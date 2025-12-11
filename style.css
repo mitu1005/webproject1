@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: #ffe6f0;
+  padding: 20px;
+}
+
+h1 { color: #ff3399; }
+
+.info {
+  margin: 6px 0;
+  font-weight: bold;
+}
+
+.game-box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  width: 360px;
+  margin: 15px auto;
+}
+
+.card {
+  background-color: pink;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: transparent;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.show { color: black; background-color: #fff; }
+.matched { background-color: lightgreen; color: black; pointer-events: none; }
+
+.overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay.show { display: flex; }
+.overlay-box { background: white; padding: 30px; border-radius: 12px; }
+button { margin-top: 10px; padding: 10px 20px; background:#ff3399; color:white; border:none; border-radius:8px; cursor:pointer; }
